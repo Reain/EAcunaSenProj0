@@ -1,0 +1,44 @@
+@model IEnumerable<MVCBartender.Models.drinkInv>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>MVC Drink Menu</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Drink Name
+            </th>
+            <th>
+                Drink Description
+            </th>
+            <th>
+                Drink Price
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrinkName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrinkDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DrinkPrice)
+            </td>
+            <td>
+                <a asp-controller="drinkOrds" asp-action="Create" asp-route-drinkID="@item.ID">Add Drink To Order</a> 
+                <!--asp-route-id="(a)item.ID"-->
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+@model IEnumerable<MVCBartender.Models.drinkOrd>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.drinkQuant)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderComplete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.totalPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.drinkQuant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderComplete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.totalPrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.drinkOrdID">Change Drink Status</a> 
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

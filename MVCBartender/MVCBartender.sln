@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5643E5BA-8BF3-40ED-B73A-FA37C79E9FE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AEA80C3-F0E4-4FA2-82B5-DF28DA2C9B84}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MVCBartender", "src\MVCBartender\MVCBartender.xproj", "{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2EA5C44-970B-40C3-8313-D0ADBA0BC81C} = {5643E5BA-8BF3-40ED-B73A-FA37C79E9FE0}
+	EndGlobalSection
+EndGlobal
